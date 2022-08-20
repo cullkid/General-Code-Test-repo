@@ -1,0 +1,57 @@
+.container {
+  /*border: 4px black solid;*/
+  width: 80%;
+  height: 900px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgb(90, 169, 108);
+}
+
+.flex {
+  display: flex;
+  /*margin: 20px;*/
+  height: 750px;
+}
+
+.child {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 30%;
+  margin: 50px;
+  background: wheat;
+  margin-top: 100px;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h2 {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+  color: black;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p::first-letter {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: rgb(47, 14, 234);
+}
+
+p::first-line {
+  color: red;
+}
