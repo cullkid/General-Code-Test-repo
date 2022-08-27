@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tast-1</title>
+  <style>
+    .parent {
+      max-width: 800px;
+      border: 4px blue solid;
+      background: black;
+    }
+
+    .grid {
+      display: grid;
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .parent>div {
+      background-color: aquamarine;
+      padding: 40px;
+      color: red;
+      font-weight: bolder;
+      font-size: 25px;
+      border: 4px red solid;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="parent grid">
+    <div>ONE</div>
+    <div>TWO</div>
+    <div>THREE</div>
+    <div>FOUR</div>
+  </section>
+</body>
+
+</html>
