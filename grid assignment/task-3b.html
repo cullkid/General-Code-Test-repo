@@ -13,44 +13,36 @@
 
     /* Apply to all children of container */
     .container>* {
-
       padding: 10px;
       color: #fff;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      grid-template-areas:
-        'header header header header header'
-        'side-nav main main main main'
-        'side-nav main main main main'
-        'side-nav main main main main'
-        'side-nav main main main main'
-        'side-nav main main main main'
-        'footer footer footer footer footer'
-      ;
+      grid-template-columns: repeat(5 1fr);
+      grid-template-rows: repeat(7 1fr);
     }
 
     header {
-      grid-area: header;
+      grid-area: 1 / 1 / 2 / 6;
       background-color: #f00;
       height: 50px;
     }
 
     nav {
-      grid-area: side-nav;
+      grid-area: 2 / 1 / 7 / 2;
       background-color: #0f0;
+      height: 400px;
     }
 
     main {
-      grid-area: main;
+      grid-area: 2 / 2 / 7 / 6;
       background-color: #00f;
+      height: 400px;
     }
 
     footer {
-      grid-area: footer;
+      grid-area: 7 / 1 / 8 / 6;
       background-color: #000;
       height: 50px;
     }

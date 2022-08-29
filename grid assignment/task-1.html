@@ -5,38 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tast-1</title>
+  <title>Task 1</title>
   <style>
-    .parent {
-      max-width: 800px;
-      border: 4px blue solid;
-      background: black;
+    .container {
+      max-width: 700px;
+      border: 1px solid #ccc;
     }
 
     .grid {
       display: grid;
-      grid-gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
     }
 
-    .parent>div {
-      background-color: white;
-      padding: 40px;
-      color: red;
-      font-weight: bolder;
-      font-size: 25px;
-      /* border: 4px rgb(13, 223, 48) solid;*/
+    .container>div {
+      background-color: blueviolet;
+      border: 3px solid paleturquoise;
+      padding: 20px;
+      font-weight: bold;
+      color: #fff;
+      font-size: 20px;
     }
   </style>
 </head>
 
 <body>
-  <section class="parent grid">
-    <div>ONE</div>
-    <div>TWO</div>
-    <div>THREE</div>
-    <div>FOUR</div>
-  </section>
+  <div class="container grid">
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+  </div>
 </body>
 
 </html>

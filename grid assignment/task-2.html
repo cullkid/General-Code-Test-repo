@@ -5,51 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>task-2</title>
+  <title>Task 1</title>
   <style>
-    .main {
-      max-width: 800px;
-      height: 800px;
-      border: 4px black solid;
+    .container {
+      max-width: 700px;
+      border: 1px solid #ccc;
     }
 
     .grid {
       display: grid;
-      grid-gap: 10px;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 150px);
-      padding: 10px;
-      align-content: space-around;
     }
 
-    .main>div {
-      background: rgb(13, 195, 212);
-      border: 4px rgb(231, 11, 11) solid;
+    .container>div {
+      background-color: blueviolet;
+      border: 3px solid paleturquoise;
       padding: 20px;
-      color: white;
-      font-weight: bolder;
-      font-size: 25px;
+      font-weight: bold;
+      color: #fff;
+      font-size: 20px;
     }
 
-    .item-2 {
-      background: blueviolet !important;
+    .item1 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 3;
+    }
+
+    .item2 {
+      grid-column: 2 / 5;
+      grid-row: 2 / 4;
+
+      background-color: #f00 !important;
     }
   </style>
 </head>
 
 <body>
-  <section class="main grid">
-    <div class="item-1">ONE</div>
-    <div class="item-2">TWO</div>
-    <div style="background: pink;">THREE</div>
-    <div style="background: yellow;">FOUR</div>
-    <div style="background: green;">FIVE</div>
-    <div style="background: brown;">SIX</div>
-    <div style="background: gray;">SEVEN</div>
-    <div style="background: blue;">EIGHT</div>
-    <div style="background: black;">NINE</div>
-    <div>TEN</div>
-  </section>
+  <div class="container grid">
+    <div class='item1'>One</div>
+    <div class='item2'>Two</div>
+  </div>
 </body>
 
 </html>
