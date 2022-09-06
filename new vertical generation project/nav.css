@@ -1,0 +1,117 @@
+:root {
+  --bgcolor2: rgb(56, 5, 5);
+  --bgcolor: #098b1f;
+  --hoverback: #50dbd9;
+  --hovercolor: rgb(18, 15, 1);
+  --link: rgb(252, 248, 248);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url(rope.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 70rem;
+  background-origin: content-box;
+}
+
+.navbar {
+  display: inline-block;
+  position: relative;
+  background: var(--bgcolor);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+.logo {
+  align-self: center;
+  margin-left: 1.2rem;
+}
+
+.nav-links {
+  align-self: center;
+  cursor: pointer;
+  font-weight: bolder;
+  list-style: none;
+  /*align-items: center;*/
+}
+
+.a {
+  padding: 40px;
+  text-decoration: none;
+  color: var(--link);
+  font-size: 20px;
+}
+
+.nav-links a:hover {
+  background-color: var(--hoverback);
+  color: var(--hovercolor);
+}
+
+.menu-icon {
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 700px;
+    margin-bottom: 800px;
+    background-size: contain;
+  }
+
+  .navbar {
+    margin-top: 30px;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    margin-top: 10.59rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--bgcolor2);
+    text-align: center;
+  }
+
+  .menu-icon {
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .nav-links .a {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .a {
+    /*width: 50px;*/
+    text-align: center;
+    padding: 25px;
+    border-bottom: 4px var(--bgcolor) solid;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 1;
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  #toggle-menu:checked ~ .nav-links {
+    display: block;
+  }
+}

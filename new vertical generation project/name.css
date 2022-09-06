@@ -1,0 +1,79 @@
+:root {
+  --border: yellow;
+  --tcolor: rgb(222, 150, 108);
+  --new: rgb(34, 255, 0);
+  --ver: rgb(151, 20, 6);
+  --gen: rgb(255, 0, 195);
+}
+
+.name {
+  /*border: 4px var(--border) solid;*/
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-size: 100px;
+  font-family: fantasy;
+  color: var(--tcolor);
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 255, 174),
+    0 0 5px rgb(139, 0, 104);
+}
+
+.new::first-letter {
+  color: var(--new);
+  font-size: 150px;
+  font-family: fantasy;
+}
+
+.ver::first-letter {
+  color: var(--ver);
+  font-size: 150px;
+  font-family: fantasy;
+}
+
+.gen::first-letter {
+  color: var(--new);
+  font-size: 150px;
+  font-family: fantasy;
+}
+
+@media screen and (max-width: 700px) {
+  .name {
+    /*border: 4px var(--border) solid;*/
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: fantasy;
+    color: var(--tcolor);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 255, 174),
+      0 0 5px rgb(139, 0, 104);
+  }
+
+  .new::first-letter {
+    color: var(--new);
+    font-size: 45px;
+    font-family: fantasy;
+  }
+
+  .ver::first-letter {
+    color: var(--ver);
+    font-size: 45px;
+    font-family: fantasy;
+  }
+
+  .gen::first-letter {
+    color: var(--new);
+    font-size: 45px;
+    font-family: fantasy;
+  }
+}
