@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1 style="color: red;"> creating first JSON string and using json.parse() to convert it to javascript text object
+  </h1>
+  <h2 style="font-size: 40px;" id="demo2"></h2>
+  <h3 style="font-size: 40px;" id="demo3"></h3>
+  <h4 style="font-size: 40px;" id="demo4"></h4>
+  <h5 style="font-size: 40px;" id="demo5"></h5>
+  <h6 style="font-size: 40px;" id="demo6"></h6>
+  <script>
+    //first create the json object array that has employees as an array variable and assign it three obrect, and text varieble will contain both the json array amd object
+    //remember why we use let variable is because we want the value to be change letter
+    let text = '{"employees":[' +
+      '{"firstName":"Eze","lastName":"Anthony" },' +
+      '{"firstName":"Kenedy","lastName":"Smith" },' +
+      '{"firstName":"Peter","lastName":"Pogba" }]}';
+    //now convert the json string into javascript object text by using json.parse() 
+    //and now we gonna use const variable which means th at the text wouldn't be change again in future
+    const obj = JSON.parse(text);
+
+    //last thing is to print out the json string into javascript text form as we have changed it to js text in line '30'
+    //remeber the index number of javascript count from base 0
+    document.getElementById("demo2").innerHTML =
+      obj.employees[0].firstName + "  " + obj.employees[0].lastName;
+
+    document.getElementById("demo3").innerHTML =
+      obj.employees[1].firstName + "  " + obj.employees[2].lastName;
+
+    document.getElementById("demo4").innerHTML =
+      obj.employees[2].firstName + " " + obj.employees[1].lastName;
+
+    document.getElementById("demo5").innerHTML =
+      obj.employees[1].firstName + " " + obj.employees[0].lastName;
+
+    document.getElementById("demo6").innerHTML =
+      obj.employees[0].firstName + " " + obj.employees[1].lastName;
+  </script>
+</body>
+
+</html>
