@@ -1,0 +1,565 @@
+.feature {
+  /*background: var(--delta);*/
+  background-image: linear-gradient(var(--delta) 50%, var(--elements));
+  width: 660rem;
+
+  &__properties {
+    min-width: 728rem;
+    height: 80rem;
+    background: var(--delta);
+
+    h2 {
+      text-align: center;
+      margin-top: 23rem;
+      font-weight: bolder;
+      font-size: 25rem;
+      color: var(--beta);
+    }
+
+    h2::first-letter {
+      font-size: 70rem;
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+
+  &__tlist {
+    width: 465rem;
+    height: 400rem;
+    margin-left: 105rem;
+    border-radius: 20rem;
+    background-image: url(../../images/house-intirior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*object-fit: fill;*/
+  }
+
+  .hover:hover {
+    border: 4rem var(--alert) solid;
+  }
+
+  &__id {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30rem;
+
+    header {
+      font-size: 25rem;
+      font-weight: bolder;
+      margin-top: 20rem;
+      color: var(--beta);
+    }
+
+    header:hover {
+      color: var(--alert);
+      font-size: 30rem;
+    }
+
+    img {
+      font-size: 20rem;
+      margin-top: 20rem;
+    }
+  }
+
+  &__dlist {
+    border: 3rem var(--tagla) solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5rem;
+    margin-left: 300rem;
+    margin-top: 250rem;
+    width: 300rem;
+    height: 200rem;
+    margin-left: 60rem;
+    border-radius: 20rem;
+    background: var(--delta);
+  }
+
+  &__header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    header {
+      font-size: 13rem;
+      color: var(--gamma);
+      margin-top: 15rem;
+      margin-left: 10rem;
+    }
+
+    header::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__price {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    color: var(--luxo);
+
+    header {
+      margin-left: 25rem;
+      margin-top: 5rem;
+      color: black;
+      font-weight: bolder;
+    }
+
+    img {
+      margin-top: 20rem;
+      margin-left: 35rem;
+    }
+
+    p {
+      margin-left: 20rem;
+    }
+  }
+
+  &__bed {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    img {
+      margin-top: 25rem;
+      margin-left: 28rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__bath {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 30rem;
+      margin-left: 38rem;
+    }
+
+    p {
+      margin-left: 25rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__location {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 20rem;
+      margin-left: 38rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__size {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 22rem;
+      margin-left: 35rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+  }
+  /*end of css for first feature*/
+
+  /*start of css for second feature*/
+  &__s-tlist {
+    margin-top: 180rem;
+    width: 465rem;
+    height: 400rem;
+    margin-left: 105rem;
+    border-radius: 20rem;
+    background-image: url(../../images/feature-house.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__s-id {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30rem;
+
+    header {
+      font-size: 25rem;
+      font-weight: bolder;
+      margin-top: 20rem;
+      color: var(--beta);
+    }
+
+    header:hover {
+      color: var(--alert);
+      font-size: 30rem;
+    }
+
+    img {
+      font-size: 20rem;
+      margin-top: 20rem;
+    }
+  }
+
+  &__s-dlist {
+    border: 3rem var(--tagla) solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5rem;
+    margin-left: 250rem;
+    margin-top: 250rem;
+    width: 300rem;
+    height: 200rem;
+    margin-left: 60rem;
+    border-radius: 20rem;
+    background: var(--delta);
+  }
+
+  &__s-header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    header {
+      font-size: 13rem;
+      color: var(--gamma);
+      margin-top: 15rem;
+      margin-left: 10rem;
+    }
+
+    header::first-letter {
+      font-size: 20rem;
+    }
+  }
+
+  &__s-price {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    color: var(--luxo);
+
+    header {
+      margin-left: 25rem;
+      margin-top: 5rem;
+      color: black;
+      font-weight: bolder;
+    }
+
+    img {
+      margin-top: 20rem;
+      margin-left: 35rem;
+    }
+
+    p {
+      margin-left: 20rem;
+    }
+  }
+
+  &__s-bed {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    img {
+      margin-top: 25rem;
+      margin-left: 28rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__s-bath {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 30rem;
+      margin-left: 38rem;
+    }
+
+    p {
+      margin-left: 25rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__s-location {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 20rem;
+      margin-left: 38rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 30rem;
+    }
+  }
+
+  &__s-size {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 22rem;
+      margin-left: 35rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+  }
+  /*end of css for second feature*/
+
+  /*start of css for third feature*/
+  &__t-tlist {
+    margin-top: 180rem;
+    width: 465rem;
+    height: 400rem;
+    margin-left: 105rem;
+    border-radius: 20rem;
+    background-image: url(../../images/feature-house2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__t-id {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30rem;
+
+    header {
+      font-size: 25rem;
+      font-weight: bolder;
+      margin-top: 20rem;
+      color: var(--beta);
+    }
+
+    header:hover {
+      color: var(--alert);
+      font-size: 30rem;
+    }
+
+    img {
+      font-size: 20rem;
+      margin-top: 20rem;
+    }
+  }
+
+  &__t-dlist {
+    border: 3rem var(--tagla) solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5rem;
+    margin-left: 250rem;
+    margin-top: 250rem;
+    width: 300rem;
+    height: 200rem;
+    margin-left: 60rem;
+    border-radius: 20rem;
+    background: var(--delta);
+  }
+
+  &__t-header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    header {
+      font-size: 13rem;
+      color: var(--gamma);
+      margin-top: 15rem;
+      margin-left: 10rem;
+    }
+
+    header::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__t-price {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+
+    color: var(--luxo);
+
+    header {
+      margin-left: 25rem;
+      margin-top: 5rem;
+      color: black;
+      font-weight: bolder;
+    }
+
+    img {
+      margin-top: 20rem;
+      margin-left: 35rem;
+    }
+
+    p {
+      margin-left: 20rem;
+    }
+  }
+
+  &__t-bed {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+
+    img {
+      margin-top: 25rem;
+      margin-left: 28rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__t-bath {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 30rem;
+      margin-left: 38rem;
+    }
+
+    p {
+      margin-left: 25rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__t-location {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 20rem;
+      margin-left: 38rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+
+    p::first-letter {
+      font-size: 25rem;
+    }
+  }
+
+  &__t-size {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+
+    img {
+      margin-top: 22rem;
+      margin-left: 35rem;
+    }
+
+    p {
+      margin-left: 20rem;
+      color: var(--luxo);
+    }
+  }
+  /*end of css for third feature*/
+
+    /*START OF MEDIUM-SCREEN*/
+ 
+  /*END OF MEDIUM-SCREEN*/
+
+  @include respond-to("large") {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 20rem;
+
+    &__properties {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      justify-self: center;
+      align-self: center;
+
+      h2 {
+        font-size: 40rem;
+        font-weight: bolder;
+        margin-top: 70rem;
+      }
+
+      h2::first-letter {
+        font-size: 70rem;
+        font-family: "Courier New", Courier, monospace;
+      }
+    }
+
+    &__a-tlist {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: center;
+      margin-top: 160rem;
+    }
+
+    &__a-s-tlist {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: center;
+    }
+
+    &__a-t-tlist {
+      grid-column: 3 / -1;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}

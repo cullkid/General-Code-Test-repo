@@ -1,0 +1,240 @@
+.latest {
+  margin-top: 150rem;
+  /*background: var(--yert);*/
+  background-image: linear-gradient(var(--yert) 50%, var(--bright));
+  width: 660rem;
+  padding-bottom: 10rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-weight: bolder;
+      font-size: 25rem;
+      color: var(--beta);
+      margin-top: 10rem;
+    }
+
+    h2::first-letter {
+      font-size: 70rem;
+      font-family: "Courier New", Courier, monospace;
+    }
+  }
+
+  /*Beggining of fstage*/
+  &__fstage {
+    /*display: block;*/
+    border: 3rem var(--dus) solid;
+    width: 465rem;
+    margin-left: 110rem;
+    border-radius: 20rem;
+    margin-top: 25rem;
+    margin-bottom: 60rem;
+    padding-top: 35rem;
+    padding-bottom: 100rem;
+    background: var(--delta);
+    /*height: 90%;*/
+
+    img {
+      width: 400rem;
+      border-radius: 20rem;
+      margin: 20rem;
+      box-shadow: 0 3000rem rgba(0, 0, 0, 0.7) inset;
+      object-fit: cover;
+    }
+
+    h2 {
+      font-weight: bolder;
+      font-size: 25rem;
+      margin: 20rem;
+    }
+
+    p {
+      margin: 25rem;
+      font-size: 18rem;
+      color: var(--luxo);
+    }
+
+    h4 {
+      font-size: 20rem;
+      margin: 20rem;
+      color: var(--tagla);
+    }
+
+    h3 {
+      background: var(--tagla);
+      width: 240rem;
+      padding: 10rem;
+      margin-top: 70rem;
+      margin-left: 20rem;
+      text-align: center;
+      font-size: 25rem;
+      border-radius: 20rem;
+      color: var(--delta);
+    }
+
+    h3:hover {
+      background: var(--sadxo);
+      color: var(--delta);
+    }
+  }
+  /*End of fstage*/
+
+  /*Begginig of sstage*/
+  &__sstage {
+    border: 3rem var(--dus) solid;
+    width: 465rem;
+    margin-left: 110rem;
+    border-radius: 20rem;
+    margin-top: 25rem;
+    margin-bottom: 60rem;
+    padding-top: 20rem;
+    padding-bottom: 100rem;
+    background: var(--delta);
+
+    img {
+      width: 400rem;
+      border-radius: 20rem;
+      margin: 20rem;
+      box-shadow: 0 3000rem rgba(0, 0, 0, 0.7) inset;
+    }
+
+    h2 {
+      font-weight: bolder;
+      font-size: 25rem;
+      margin: 20rem;
+    }
+
+    p {
+      margin: 25rem;
+      font-size: 18rem;
+      color: var(--luxo);
+    }
+
+    h4 {
+      font-size: 20rem;
+      margin: 20rem;
+      color: var(--tagla);
+    }
+
+    h3 {
+      background: var(--tagla);
+      width: 240rem;
+      padding: 10rem;
+      margin-top: 70rem;
+      margin-left: 20rem;
+      text-align: center;
+      font-size: 25rem;
+      border-radius: 20rem;
+      color: var(--delta);
+    }
+
+    h3:hover {
+      background: var(--sadxo);
+      color: var(--delta);
+    }
+  }
+  /*End of sstage*/
+
+  /*Begging of tstage*/
+  &__tstage {
+    border: 3rem var(--dus) solid;
+    width: 465rem;
+    margin-left: 110rem;
+    border-radius: 20rem;
+    margin-top: 25rem;
+    margin-bottom: 60rem;
+    padding-bottom: 40rem;
+    background: var(--delta);
+
+    img {
+      width: 400rem;
+      border-radius: 20rem;
+      margin: 20rem;
+      box-shadow: 0 3000rem rgba(0, 0, 0, 0.7) inset;
+    }
+
+    h2 {
+      font-weight: bolder;
+      font-size: 25rem;
+      margin: 20rem;
+    }
+
+    p {
+      margin: 25rem;
+      font-size: 18rem;
+      color: var(--luxo);
+    }
+
+    h4 {
+      font-size: 20rem;
+      margin: 20rem;
+      color: var(--tagla);
+    }
+
+    h3 {
+      background: var(--tagla);
+      width: 240rem;
+      padding: 10rem;
+      margin-top: 70rem;
+      margin-left: 20rem;
+      text-align: center;
+      font-size: 25rem;
+      border-radius: 20rem;
+      color: var(--delta);
+    }
+
+    h3:hover {
+      background: var(--sadxo);
+      color: var(--delta);
+    }
+  }
+  /*End of tstage*/
+
+   /*START OF MEDIUM-SCREEN*/
+ 
+  /*END OF MEDIUM-SCREEN*/ 
+
+  /*Beggining of desktop template*/
+  @include respond-to("large") {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 20rem;
+
+    &__header {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      padding-bottom: 40rem;
+      /*padding-top: 40rem;*/
+
+      h2 {
+        font-size: 40rem;
+      }
+    }
+
+    &__fstage {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: center;
+      padding-bottom: 30rem;
+    }
+
+    &__sstage {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: center;
+    }
+
+    &__tstage {
+      grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}

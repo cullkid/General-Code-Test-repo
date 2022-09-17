@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>HAPPYHOME PORTUGAL</title>
+</head>
+
+<body>
+    <!--Beggining of nav -->
+    <nav class="nav">
+        <input type="checkbox" class="nav__toggle" id="hamburger" hidden />
+        <ul class="nav__logo mt">
+            <li>
+                <a href="">
+                    <article class="nav__happy">HAPPYHOMES</article>
+                </a>
+            </li>
+            <li>
+                <a href=""><img src="images/house-logo.jpg" alt="" /></a>
+            </li>
+            <li>
+                <a href="">
+                    <article class="nav__portugal">PORTUGAL</article>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="nav__hamburger">
+            <li>
+                <label for="hamburger"><img src="images/hamburger.svg" alt="" /></label>
+            </li>
+        </ul>
+
+        <ul class="nav__dropl">
+            <article class="nav__list">
+                <li><a class="nav__d-child" href="">Home</a></li>
+
+                <div class="nav__dropdown">
+                    <li><a href="">Buy</a></li>
+                    <div class="nav__dd-list">
+                        <a class="nav__list-child" href="">Algarve properties</a>
+                        <a class="nav__list-child" href="">coimbra properties</a>
+                        <a class="nav__list-child" href="">Lisbon properties</a>
+                        <a class="nav__list-child" href="">Braganca properties</a>
+                        <a class="nav__list-child" href="">Cascias Properties</a>
+                        <a class="nav__list-child" href="">Search location...</a>
+                    </div>
+                </div>
+
+                <li><a href="">Sell</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">HAPPYHOMES TV Episodes</a></li>
+                <li><a href="">Contact</a></li>
+            </article>
+        </ul>
+    </nav>
+    <!--End of nav-->
+
+    <!--Beggining of section-->
+    <form action="" class="section">
+
+        <h1>Explore Your portugal property Search here</h1>
+
+        <div class="section__form">
+            <div class="section__flex">
+                <div class="section__flex-child">
+                    <fieldset class="section__search">
+                        <label for="search-site">
+                            <select name="search-site" id="search-site" required>
+                                <a href="#alverca">
+                                    <option value=""> SEARCH </option>
+                                </a>
+                                <option id="one" value="1">ALGARVE</option>
+                                <option value="2">LISBON</option>
+                                <option value="3">COIMBRA</option>
+                                <option value="4">CASCAIS</option>
+                                <option value="5">PORTO</option>
+                            </select>
+                        </label><br>
+                    </fieldset>
+
+                    <fieldset class="section__min">
+                        <label for="min">
+                            <select name="min" id="min" required>
+                                <option value="">Min</option>
+                                <option value="1"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="2"><img src="images/euro.svg" alt="" />200,000</option>
+                                <option value="3"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="4"><img src="images/euro.svg" alt="" />300,000</option>
+                                <option value="5"><img src="images/euro.svg" alt="" />400,000</option>
+                                <option value="6"><img src="images/euro.svg" alt="" />500,000</option>
+                            </select>
+                        </label>
+                    </fieldset><br>
+                </div>
+
+                <div>
+                    <fieldset class="section__max">
+                        <label for="max">
+                            <select name="max" id="max" required>
+                                <option value="">Max</option>
+                                <option value="1"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="2"><img src="images/euro.svg" alt="" />200,000</option>
+                                <option value="3"><img src="images/euro.svg" alt="" />100,000</option>
+                                <option value="4"><img src="images/euro.svg" alt="" />300,000</option>
+                                <option value="5"><img src="images/euro.svg" alt="" />400,000</option>
+                                <option value="6"><img src="images/euro.svg" alt="" />500,000</option>
+                            </select>
+                        </label>
+                    </fieldset><br>
+
+                    <fieldset class="section__submit">
+                        <input type="submit" id="submit" value="Submit" />
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--End of section-->
+
+    <!--Beggining of div feature-->
+    <div class="feature">
+        <div class="feature__properties">
+            <h2>Featured Properties</h2>
+        </div>
+
+        <!--Beggining of first feature-->
+        <a class="feature__a-tlist" href="">
+            <div class="feature__tlist hover">
+                <article class="feature__id">
+                    <header>Ref : IDF12345</header>
+                    <img src="images/love-image.svg" alt="" />
+                </article>
+                <div class="feature__dlist hover">
+                    <article class="feature__header">
+                        <header>4 bedrooms house<br />property<br />for sale</header>
+                    </article>
+
+                    <article class="feature__price">
+                        <header>PRICE</header>
+                        <img src="images/euro.svg" alt="" />
+                        <p>970,000</p>
+                    </article>
+
+                    <article class="feature__bed">
+                        <img src="images/bed-image.svg" alt="" />
+                        <p>4beds</p>
+                    </article>
+
+                    <article class="feature__bath">
+                        <img src="images/bath-image.svg" alt="" />
+                        <p>3baths</p>
+                    </article>
+
+                    <article class="feature__location">
+                        <img src="images/location.svg" alt="" />
+                        <p>Lisbon, Portugal</p>
+                    </article>
+
+                    <article class="feature__size">
+                        <img src="images/miter-image.svg" alt="" />
+                        <p>276 m3</p>
+                    </article>
+                </div>
+            </div>
+        </a>
+        <!--End of first feature-->
+
+        <!--Beggining of second feature-->
+        <a class="feature__a-s-tlist" href="">
+            <div class="feature__s-tlist hover">
+                <article class="feature__s-id">
+                    <header>Ref : ID54321</header>
+                    <img src="images/love-image.svg" alt="" />
+                </article>
+
+                <div class="feature__s-dlist hover">
+                    <article class="feature__s-header">
+                        <header>3 bedrooms<br />house<br />property<br />for sale</header>
+                    </article>
+
+                    <article class="feature__s-price">
+                        <header>PRICE</header>
+                        <img src="images/euro.svg" alt="" />
+                        <p>670,000</p>
+                    </article>
+
+                    <article class="feature__s-bed">
+                        <img src="images/bed-image.svg" alt="" />
+                        <p>3beds</p>
+                    </article>
+
+                    <article class="feature__s-bath">
+                        <img src="images/bath-image.svg" alt="" />
+                        <p>2baths</p>
+                    </article>
+
+                    <article class="feature__s-location">
+                        <img src="images/location.svg" alt="" />
+                        <p>cascais, Portugal</p>
+                    </article>
+
+                    <article class="feature__s-size">
+                        <img src="images/miter-image.svg" alt="" />
+                        <p>176 m2</p>
+                    </article>
+                </div>
+            </div>
+        </a>
+        <!--End of second feature-->
+
+        <!--Beggining 0f third feature-->
+        <a class="feature__a-t-tlist" href="">
+            <div class="feature__t-tlist hover">
+                <article class="feature__t-id">
+                    <header>Ref : ID32154</header>
+                    <img src="images/love-image.svg" alt="" />
+                </article>
+
+                <div class="feature__t-dlist hover">
+                    <article class="feature__t-header">
+                        <header>2 bedrooms<br />house<br />property<br />for sale</header>
+                    </article>
+
+                    <article class="feature__t-price">
+                        <header>PRICE</header>
+                        <img src="images/euro.svg" alt="" />
+                        <p>530,000</p>
+                    </article>
+
+                    <article class="feature__t-bed">
+                        <img src="images/bed-image.svg" alt="" />
+                        <p>2beds</p>
+                    </article>
+
+                    <article class="feature__t-bath">
+                        <img src="images/bath-image.svg" alt="" />
+                        <p>2baths</p>
+                    </article>
+
+                    <article class="feature__t-location">
+                        <img src="images/location.svg" alt="" />
+                        <p>oeiras, Portugal</p>
+                    </article>
+
+                    <article class="feature__t-size">
+                        <img src="images/miter-image.svg" alt="" />
+                        <p>116 m2</p>
+                    </article>
+                </div>
+            </div>
+        </a>
+        <!--end of third feature-->
+    </div>
+    <!--End of div feature-->
+
+    <!--Beggining of div-latest-->
+    <div class="latest">
+        <!--Beggining of latest-header-->
+        <div class="latest__header">
+            <img src="images/biggest-circle.svg" alt="" />
+            <h2>Latest news</h2>
+            <article>
+                <img src="images/bigger-circle.svg" alt="" />
+                <img src="images/big-circle.svg" alt="" />
+            </article>
+        </div>
+        <!--End of latest-header-->
+
+        <!--Begginig of fstage-->
+        <div class="latest__fstage">
+            <img src="images/news-image1.svg" alt="" />
+            <h2>Golding Visa Homes Lunch In Lisbon Expo</h2>
+            <p>
+                HappyHomes portugal offers a golding visa property deal at oriente
+                expo show. Free of charge, every 4years
+            </p>
+            <h4>13, july 2023</h4>
+            <a href="">
+                <h3>Read more...</h3>
+            </a>
+        </div>
+        <!--End of fstage-->
+
+        <!--Begginig of sstage-->
+        <div class="latest__sstage">
+            <img src="images/discount-image 1.jpg" alt="" />
+            <h2>New-build discount in algarve</h2>
+            <p>
+                Pre-lauch promotion - save 10% and buy a 2beds or 3bds apartment with
+                easy access to algarve,coimbra and lisbon
+            </p>
+            <h4>30, jun 2022</h4>
+            <a href="">
+                <h3>Read more...</h3>
+            </a>
+        </div>
+        <!--End of sstage-->
+
+        <!--Begging of tstage-->
+        <div class="latest__tstage">
+            <img src="images/new-estate 1.jpg" alt="" />
+            <h2>Unveiling a new well planned estate near algarve city</h2>
+            <p>
+                HappyHomes portugal is planning an unveil ceremony, there we will
+                bring to the public notice on the NEW-ESTATE project near algarve city
+            </p>
+            <h4>16, november 2022</h4>
+            <a href="">
+                <h3>READ MORE...</h3>
+            </a>
+        </div>
+        <!--End of tstage-->
+    </div>
+    <!--End of div-latest-->
+
+    <!--Beggining of div-porpular-->
+    <section class="porpular">
+
+        <div class="porpular__flist">
+            <h2 class="porpular__header">Porpular location</h2>
+
+            <a class="porpular__f-alg" href="">
+                <div class="porpular__alg">
+                    <p>Algarve</p>
+                </div>
+            </a>
+
+            <a class="porpular__f-cas" href="">
+                <div class="porpular__cas">
+                    <p>Cascais</p>
+                </div>
+            </a>
+
+            <a class="porpular__f-lisbon" href="">
+                <div class="porpular__lisbon">
+                    <p>Lisbon</p>
+                </div>
+            </a>
+
+            <a class="porpular__f-coim" href="">
+                <div class="porpular__coim">
+                    <p>Coimbra</p>
+                </div>
+            </a>
+
+            <a class="porpular__f-porto" href="">
+                <div class="porpular__porto">
+                    <p>Porto</p>
+                </div>
+            </a>
+
+            <a class="porpular__f-brag" href="">
+                <div class="porpular__brag">
+                    <p>braganca</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="porpular__slist">
+
+            <a class="porpular__next" href="">
+                <p>&#60; &#60;</p>
+            </a>
+
+            <a class="porpular__previ" href="">
+                <p> &#62; &#62;</p>
+            </a>
+        </div>
+    </section>
+
+    <!--Beggining of address page-->
+    <section class="address">
+
+        <!--Beggining of address and contact-->
+        <div class="address__location">
+            <header class="address__header">Info</header>
+            <div class="address__location-2">
+                <address class="address__f-location">
+                    <div class="address__fl-branch">
+                        <img src="images/location.svg" alt="">
+                        <article class="address__f-office">
+                            <h2>Lisbon Office</h2>
+                            <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                            <p>Tel: <span style="color: var(--yert);">+123456789</span></p>
+                        </article>
+                    </div>
+                </address>
+
+                <address class="address__s-location margin">
+                    <div class="address__sl-branch margin">
+                        <img src="images/location.svg" alt="">
+                        <article class="address__f-office">
+                            <h2>Porto Office</h2>
+                            <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                Aenean
+                                commodo ligula eget dolor. Aenean massa. Cum sociis</p>
+                            <p>Tel: <span style="color: var(--yert);">+123456789</span></p>
+                        </article>
+                    </div>
+                </address>
+
+                <div class="address__call">
+                    <div class="address__b-call">
+                        <img src="images/call.svg" alt="">
+                        <p>Portugal Free Phone Number: <br> <span style="color: var(--yert);">+123456789
+                                <br>+123456789</span></p>
+                    </div>
+                </div>
+
+                <div class="address__email">
+                    <div class="address__b-email">
+                        <img src="images/email.svg" alt="">
+                        <p>info@HAPPYHOMESPORTUGAL.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--End of address and contact-->
+
+            <!--Beggining of newsletter-->
+            <div class="address__newsletter">
+                <h1>Newsletter</h1>
+                <div class="address__b-newsletter">
+                    <p>Be the first to receive news with the Ideal Homes newsletter.</p>
+                    <a href="" class="address__ank">Sign Up</a>
+                </div>
+            </div>
+            <!--End of newsletter-->
+
+            <!--Beggining of social-media contact-->
+            <div class="address__media">
+                <h1>Follow Us</h1>
+                <div class="address__b-media">
+                    <a class="address__mc" href=""><img src="images/instagram.svg" alt=""></a>
+                    <a href=""> <img src="images/twitter.svg" alt=""></a>
+                    <a href=""><img src="images/youtube.svg" alt=""></a>
+                    <a href=""><img src="images/facebook.svg" alt=""></a>
+                </div>
+            </div>
+            <!--End of social-media contact-->
+
+            <!--Beggining of porpular-link-->
+            <div class="address__plink">
+                <h1>porpular Link</h1>
+                <div class="address__b-plink">
+                    <article class="address__b-plink">
+                        <img src="images/location.svg" alt="">
+                        <a href="">About Us</a>
+                    </article>
+
+                    <article class="address__b-plink">
+                        <img src="images/location.svg" alt="">
+                        <a href="">All Portugal Property</a>
+                    </article>
+
+                    <article class="address__b-plink">
+                        <img src="images/location.svg" alt="">
+                        <a href="">Golding Visa Portugal</a>
+                    </article>
+
+                    <article class="address__b-plink">
+                        <img src="images/location.svg" alt="">
+                        <a href="">Holiday Rentals</a>
+                    </article>
+
+                    <article class="address__b-plink">
+                        <img src="images/location.svg" alt="">
+                        <a href="">Mortgages</a>
+                    </article>
+
+                    <article class="address__b-plink">
+                        <img src="images/location.svg" alt="">
+                        <a href="">Privacy Policy</a>
+                    </article>
+                </div>
+            </div>
+            <!--End of porpular-link-->
+
+    </section>
+    <!--End of address page-->
+
+</body>
+
+</html>

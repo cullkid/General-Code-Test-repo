@@ -1,0 +1,185 @@
+.section {
+  border: 3rem var(--tagla) solid;
+  width: 660rem;
+  background: var(--luxo);
+
+  h1 {
+    width: 590rem;
+    padding: 40rem;
+    text-align: center;
+    font-size: 23rem;
+    font-weight: bolder;
+    color: var(--delta);
+    margin-left: 20rem;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    transform: 1s ease-in-out;
+  }
+
+  h1::first-letter {
+    font-size: 80rem;
+    height: 10rem;
+    color: var(--alert);
+    /*font-style: oblique;*/
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  h1:hover {
+    color: var(--alert);
+  }
+
+  &__form {
+    /*display: flex;*/
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    border: 4rem var(--beta) dotted;
+    width: 465rem;
+    background: var(--skills);
+    margin-bottom: 20rem;
+    margin-left: 94rem;
+  }
+
+  &__search {
+    margin-left: 50rem;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+
+    select {
+      width: 100rem;
+      color: var(--luxo);
+      padding: 8rem;
+      background: var(--delta);
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+      transition: width 1s ease-in-out;
+    }
+  }
+
+  &__min {
+    margin-left: 50rem;
+    /*margin-top: 10rem;*/
+    /*margin-bottom: 30rem;*/
+
+    select {
+      width: 100rem;
+      color: var(--luxo);
+      padding: 8rem;
+      background: var(--delta);
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+      transition: width 1s ease-in-out;
+    }
+  }
+
+  &__max {
+    margin-left: 50rem;
+    /*margin-top: 20rem;*/
+    /*margin-bottom: 30rem;*/
+
+    select {
+      width: 100rem;
+      color: var(--luxo);
+      padding: 8rem;
+      background: var(--delta);
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+      transition: width 1s ease-in-out;
+    }
+  }
+
+  &__submit {
+    margin-left: 50rem;
+    /*margin-top: 20rem;*/
+    margin-bottom: 20rem;
+
+    input {
+      width: 100rem;
+      color: var(--delta);
+      padding: 8rem;
+      background: var(--tagla);
+      border: 4rem var(--luxo) solid;
+      border-radius: 10rem;
+    }
+  }
+
+  /*END OF SMALL-SCREEN*/
+
+  /*START OF MEDIUM-SCREEN*/
+
+  @include respond-to("large") {
+    width: auto;
+    padding-bottom: 40rem;
+    padding-bottom: 50rem;
+
+    h1 {
+      width: 2300rem;
+      text-align: center;
+      font-size: 50rem;
+      margin-left: 300rem;
+    }
+
+    h1::first-letter {
+      font-size: 80rem;
+      height: 10rem;
+      color: var(--alert);
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    h1:hover {
+      color: var(--alert);
+    }
+
+    &__form {
+      width: 2300rem;
+      margin-left: 300rem;
+      padding: 60rem;
+    }
+
+    &__flex {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__search {
+      margin-top: 0;
+    }
+
+    &__min {
+      margin-bottom: 0;
+    }
+
+    &__max {
+      margin-top: 0;
+    }
+
+    &__submit {
+      margin-bottom: 0;
+    }
+
+    select {
+      width: 600rem;
+      padding: 20rem;
+      font-size: 30rem;
+      justify-items: center;
+    }
+
+    select {
+      width: 600rem;
+      padding: 20rem;
+      font-size: 30rem;
+      justify-items: center;
+      align-items: center;
+    }
+
+    input {
+      display: block;
+      width: 600rem;
+      padding: 20rem;
+      font-size: 30rem;
+      /*margin-top: 70rem;*/
+    }
+
+    input:hover {
+      background: var(--sadxo);
+    }
+  }
+}
