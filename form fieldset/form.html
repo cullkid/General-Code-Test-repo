@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title"> New Vertical Generation Registration Form</h1>
+
+  <p id="description">Please fill out this form with the required information</p>
+
+  <form action="" id="survey-form">
+    <fieldset>
+      <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Enter Your Name"
+          required /></label> <br>
+
+      <label id="email-label" for="email"> Email <input id="email" name="email" type="email"
+          placeholder="Enter Your Email" required /></label> <br>
+
+      <label id="number-label" for="number">Number <input id="number" name="number" type="number" min="9" max="15"
+          placeholder="Enter Your Number" required /></label>
+    </fieldset>
+
+    <fieldset>
+      <label for="dropdown">How did you hear about us?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Google Advert</option>
+          <option value="2">Facebook Post</option>
+          <option value="3">YouTube Channel</option>
+          <option value="4">Someone Refer Me To</option>
+          <option value="5">Other</option>
+        </select>
+      </label>
+
+      <p class="ar">Would you recommend NewVerticalGeneration to a friend?</p>
+      <label for="helpful"><input id="helpful" type="radio" name="helpful" value="helpful"
+          class="inline" />Helpful</label><br>
+
+      <label for="high-recomend"><input id="high-recomend" type="radio" name="high-recomend" value="high-recomend"
+          class="inline" />Highly-Recomend</label> <br>
+
+      <label for="greatful"><input id="greatful" type="radio" name="greatful" value="greatful"
+          class="inline" />Greatful</label>
+
+      <p class="ar">What service are you looking for in NewVerticalGeneration?</p>
+      <label for="glass"><input id="glass" type="radio" name="glass" value="glass"
+          class="inline" />Glass-cleaning</label><br>
+
+      <label for="instal"><input id="instal" type="radio" name="instal" value="instal"
+          class="inline" />Instalation</label> <br>
+
+      <label for="paint"><input id="paint" type="radio" name="paint" value="paint" class="inline" />Painting</label>
+
+      <p class="ar">What would you like to see improved? (Check all that apply)</p>
+      <label for="improve" name="improve">
+        <input id="improve" type="checkbox" required value="improve" class="inline" />Quick-delivery</a>
+      </label><br>
+
+      <label for="improve" name="improve">
+        <input id="improve" type="checkbox" required value="improve" class="inline" />Service-improvement</a>
+      </label> <br>
+
+      <label for="bio">comment
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="for more comment"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" id="submit" class="sub" value="Submit" />
+    </fieldset>
+  </form>
+</body>
+
+</html>
